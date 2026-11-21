@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    /* Основний стиль для квадратика картки */
+    .card {
+      display: inline-block;
+      background-color: #e0e0e0; /* Сірий колір прямокутника */
+      padding: 8px 12px;         /* Відступи всередині картки */
+      margin-right: 4px;         /* Відстань між картками */
+      font-size: 22px;           /* Розмір шрифту */
+      font-weight: bold;         /* Жирний текст */
+      border-radius: 3px;        /* Легке закруглення кутів */
+    }
+
+    /* Червоний колір для мастей Чирва та Бубна */
+    .red {
+      color: #b71c1c;
+    }
+
+    /* Чорний колір для мастей Піка та Трефа */
+    .black {
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+
+  <p>Player 1:</p>
+  <div>
+    <span class="card black">2&spades;</span>
+    <span class="card red">9&hearts;</span>
+    <span class="card red">6&hearts;</span>
+    <span class="card red">A&diams;</span>
+    <span class="card black">Q&spades;</span>
+    <span class="card black">J&clubs;</span>
+  </div>
+
+  <br>
+
+  <p>Player 2:</p>
+  <div>
+    <span class="card red">3&hearts;</span>
+    <span class="card black">A&clubs;</span>
+    <span class="card black">10&clubs;</span>
+    <span class="card red">K&diams;</span>
+    <span class="card black">8&spades;</span>
+    <span class="card red">3&hearts;</span>
+  </div>
+
+</body>
+</html>
