@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My To Do List</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 48px 20px;
+      background: #f3f7fb;
+      color: #243447;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    main {
+      width: min(100%, 680px);
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: #183b56;
+      text-align: center;
+    }
+
+    .subtitle {
+      margin-bottom: 28px;
+      color: #64788a;
+      text-align: center;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      border: 1px solid #cbd9e5;
+      border-radius: 14px;
+      list-style: none;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-height: 58px;
+      padding: 12px 16px;
+    }
+
+    /* Різні блакитні відтінки для непарних і парних рядків */
+    li:nth-child(odd) {
+      background: #dff2ff;
+    }
+
+    li:nth-child(even) {
+      background: #c8e8fb;
+    }
+
+    /* Стиль виконаного завдання */
+    li.done {
+      background: #e2e5e8;
+      color: #78828b;
+    }
+
+    .box {
+      color: #176a9b;
+      font-size: 1.45rem;
+    }
+
+    .done .box {
+      color: #4c8b62;
+    }
+
+    .task {
+      flex: 1;
+    }
+
+    .done .task {
+      text-decoration: line-through;
+    }
+
+    .remove {
+      color: #d72f3f;
+      font-size: 1.35rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>My To Do List</h1>
+    <p class="subtitle">Мій план на день</p>
+
+    <ul>
+      <li>
+        <span class="box">&#9744;</span>
+        <span class="task">Прокинутись</span>
+        <span class="remove">&#10006;</span>
+      </li>
+
+      <li>
+        <span class="box">&#9744;</span>
+        <span class="task">Поснідати</span>
+        <span class="remove">&#10006;</span>
+      </li>
+
+      <li>
+        <span class="box">&#9744;</span>
+        <span class="task">Піти в спортзал</span>
+        <span class="remove">&#10006;</span>
+      </li>
+
+      <li>
+        <span class="box">&#9744;</span>
+        <span class="task">Піти на пари</span>
+        <span class="remove">&#10006;</span>
+      </li>
+
+      <li>
+        <span class="box">&#9744;</span>
+        <span class="task">Зробити домашнє завдання</span>
+        <span class="remove">&#10006;</span>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
