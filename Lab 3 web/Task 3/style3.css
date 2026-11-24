@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.server-table {
+  width: 900px;
+  margin: 0 auto;
+  /* separate + border-spacing: 0 дозволяє заокруглювати кути thead без обрізання */
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 13px;
+  color: #333333;
+}
+
+/* --- ЗАГОЛОВОК ТАБЛИЦІ --- */
+.server-table thead th {
+  background-color: #3b76b8;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 12px 16px;
+  text-align: center;
+}
+
+/* Заокруглення верхніх кутів таблиці */
+.server-table thead th:first-child {
+  border-top-left-radius: 6px;
+}
+
+.server-table thead th:last-child {
+  border-top-right-radius: 6px;
+}
+
+/* --- КОМІРКИ ТІЛА ТАБЛИЦІ --- */
+.server-table tbody td {
+  padding: 12px 16px;
+  vertical-align: top;
+}
+
+/* Вирівнювання першого стовпця (#ID) по центру, як на макеті */
+.server-table tbody td:first-child {
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+  vertical-align: middle !important;
+}
+
+/* --- ЧЕРГУВАННЯ КОЛЬОРІВ РЯДКІВ (ЗЕБРА) --- */
+.server-table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.server-table tbody tr:nth-child(even) {
+  background-color: #dce8f5;
+}
+
+/* --- ЕФЕКТ ПРИ НАВЕДЕННІ МИШІ --- */
+.server-table tbody tr:hover {
+  background-color: #c2daf3;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+/* --- ТИПОГРАФІКА ВСЕРЕДИНІ КОМІРОК --- */
+.bold-text,
+.main-text {
+  font-weight: 700;
+  color: #2c2c2c;
+}
+
+.sub-text {
+  font-size: 12px;
+  color: #7a869a;
+  margin-top: 3px;
+}
+
+/* --- ОВАЛЬНІ БЕЙДЖІ (SIZE) --- */
+.badge {
+  display: inline-block;
+  min-width: 75px;
+  padding: 4px 12px;
+  background-color: #3b76b8;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* --- КРУГЛІ ІНДИКАТОРИ ПРІОРИТЕТУ (PRIORITY) --- */
+.priority {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* Кольори кружечків відповідно до рівня пріоритету */
+.p-1 { background-color: #c0392b; } /* Червоний */
+.p-2 { background-color: #b7791f; } /* Охристий/жовто-коричневий */
+.p-3 { background-color: #169c33; } /* Зелений */
+.p-4 { background-color: #3b76b8; } /* Синій */
+.p-5 { background-color: #0d2b6b; } /* Темно-синій */
