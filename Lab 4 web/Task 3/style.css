@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+/* Загальний контейнер галереї */
+.gallery {
+    width: 600px;
+}
+
+/* Віконце для великого зображення */
+.big-images {
+    width: 600px;
+    height: 450px;
+    overflow: hidden; /* Ховає всі картинки, крім активної */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    margin-bottom: 15px;
+    scroll-behavior: smooth; /* Плавний перехід при кліку (за бажанням) */
+}
+
+/* Кожне велике зображення займає рівно розмір віконця */
+.big-images img {
+    display: block;
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+}
+
+/* Ряд нижніх мініатюр */
+.thumbnails {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Посилання-обгортка для мініатюри */
+.thumbnails a {
+    display: block;
+    flex: 1;
+    height: 75px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Самі маленькі картинки */
+.thumbnails img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Легкий ефект при наведенні на мініатюру */
+.thumbnails a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}

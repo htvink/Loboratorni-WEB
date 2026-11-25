@@ -1,0 +1,75 @@
+.cooler-card {
+    box-sizing: border-box;
+    width: 230px;
+    padding: 12px;
+    background-color: #f1f5f9;
+    border: 1px solid #b8c7d9;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+}
+
+.cooler-card__image {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 12px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cooler-card__title {
+    margin: 0 0 12px;
+    color: #172554;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cooler-card__properties {
+    margin-bottom: 14px;
+}
+
+.cooler-card__property {
+    margin: 7px 0;
+    color: #334155;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.cooler-card__label {
+    font-weight: bold;
+}
+
+.cooler-card__buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.cooler-card__button {
+    flex: 1;
+    padding: 8px 5px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.cooler-card__button--edit {
+    background-color: #2563eb;
+}
+
+.cooler-card__button--edit:hover {
+    background-color: #1d4ed8;
+    box-shadow: 0 3px 8px #0003;
+}
+
+.cooler-card__button--delete {
+    background-color: #dc2626;
+}
+
+.cooler-card__button--delete:hover {
+    background-color: #b91c1c;
+    box-shadow: 0 3px 8px #0003;
+}

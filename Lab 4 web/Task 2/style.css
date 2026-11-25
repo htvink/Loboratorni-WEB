@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f3f6fb;
+    color: #172b45;
+    font-family: Arial, sans-serif;
+}
+
+.tree-page {
+    width: 100%;
+    text-align: center;
+}
+
+.tree-page__title {
+    margin: 0 0 24px;
+    color: #315b8a;
+    font-size: 40px;
+}
+
+.tree-page__text {
+    margin: 0 0 24px;
+    font-size: 20px;
+}
+
+.tree {
+    position: relative;
+    width: 450px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.tree__image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.relative {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    color: #172b45;
+    font-size: 13px;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.relative img {
+    width: 55px;
+    height: 55px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.relative--grandma {
+    top: 16%;
+    left: 17%;
+}
+
+.relative--grandpa {
+    top: 16%;
+    left: 62%;
+}
+
+.relative--mom {
+    top: 39%;
+    left: 17%;
+}
+
+.relative--dad {
+    top: 39%;
+    left: 62%;
+}
+
+.relative--me {
+    top: 62%;
+    left: 40%;
+}
+
+@media (max-width: 500px) {
+    body {
+        padding: 16px;
+    }
+
+    .tree-page__title {
+        font-size: 30px;
+    }
+
+    .tree-page__text {
+        font-size: 17px;
+    }
+
+    .relative img {
+        width: 44px;
+        height: 44px;
+    }
+
+    .relative {
+        font-size: 11px;
+    }
+}

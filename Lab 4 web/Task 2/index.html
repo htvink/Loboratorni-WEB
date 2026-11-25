@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моє генеалогічне дерево</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="tree-page">
+        <h1 class="tree-page__title">Моє генеалогічне дерево</h1>
+        <p class="tree-page__text">
+            Натисни на зону дерева, щоб переглянути сторінку члена родини.
+        </p>
+
+        <img
+            class="tree-page__image"
+            src="img/tree.png"
+            alt="Генеалогічне дерево"
+            usemap="#family-map"
+        >
+
+        <map name="family-map">
+            <!-- Координати заміни на ті, які згенерує imagemap.org -->
+            <area shape="rect" coords="50,50,150,150"
+                  href="family/mom.html" alt="Мама">
+
+            <area shape="rect" coords="200,50,300,150"
+                  href="family/dad.html" alt="Тато">
+        </map>
+    </main>
+
+</body>
+</html>
