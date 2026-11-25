@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Годинник</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+
+        .clock {
+            position: relative;
+            width: 340px;
+            height: 340px;
+            border: 3px solid #008b8b;
+            border-radius: 50%;
+        }
+
+        .hand {
+            position: absolute;
+            left: 50%;
+            bottom: 50%;
+            transform-origin: center bottom;
+            border-radius: 4px;
+        }
+
+        /* Хвилинна стрілка: один оберт за секунду */
+        .minute-hand {
+            width: 3px;
+            height: 155px;
+            background-color: #008b8b;
+            animation: minute-rotation 1s linear infinite;
+        }
+
+        /* Годинникова стрілка: один оберт за 60 секунд */
+        .hour-hand {
+            width: 6px;
+            height: 105px;
+            background-color: #008b8b;
+            animation: hour-rotation 60s linear infinite;
+        }
+
+        .center {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 14px;
+            height: 14px;
+            background-color: #008b8b;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+
+        @keyframes minute-rotation {
+            from {
+                transform: translateX(-50%) rotate(15deg);
+            }
+            to {
+                transform: translateX(-50%) rotate(375deg);
+            }
+        }
+
+        @keyframes hour-rotation {
+            from {
+                transform: translateX(-50%) rotate(150deg);
+            }
+            to {
+                transform: translateX(-50%) rotate(510deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="clock">
+        <div class="hand minute-hand"></div>
+        <div class="hand hour-hand"></div>
+        <div class="center"></div>
+    </div>
+
+</body>
+</html>
